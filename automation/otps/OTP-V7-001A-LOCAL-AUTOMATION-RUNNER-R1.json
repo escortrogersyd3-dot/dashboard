@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "otp_id": "OTP-V7-001A-LOCAL-AUTOMATION-RUNNER-R1",
+  "title": "Establish local Dashboard automation runner",
+  "status": "admitted",
+  "depends_on": ["OTP-V7-001-AUTOMATION-CONTROL-PLANE-R1"],
+  "req_ids": ["GAP-010"],
+  "allowed_paths": [
+    ".env.example",
+    ".gitignore",
+    "package.json",
+    "automation/"
+  ],
+  "prohibited_actions": [
+    "No Dashboard application implementation",
+    "No ObserverOS source, database, API, credential, media, or deployment access",
+    "No scheduled task installation",
+    "No Docker installation or configuration",
+    "No production deployment"
+  ],
+  "acceptance": [
+    "A local preflight validates the exact admitted OTP, repository remote, clean start state, and declared scope",
+    "A changed-path guard rejects paths outside an OTP allowlist and high-risk file patterns",
+    "A receipt draft command records the exact OTP SHA and checked commit without writing authoritative state",
+    "A Mock-only environment template excludes real ObserverOS, media, database, and credential configuration",
+    "All runner commands operate without network calls other than normal Git operations invoked separately"
+  ],
+  "evidence_required": [
+    "local preflight output",
+    "allowed-path positive and negative test output",
+    "receipt draft sample",
+    "GitHub Actions result",
+    "structured receipt"
+  ]
+}
