@@ -24,6 +24,7 @@
     "weekly-operations-shell:verify": "node automation/scripts/verify_weekly_operations_shell.mjs",
     "weekly-finance-contract:verify": "node automation/scripts/verify_weekly_finance_contract.mjs",
     "weekly-finance-shell:verify": "node automation/scripts/verify_weekly_finance_shell.mjs",
+    "insight-analysis-contract:verify": "node automation/scripts/verify_insight_analysis_contract.mjs",
     "control-plane:validate": "python automation/scripts/validate_control_plane.py",
     "automation:preflight": "python automation/scripts/preflight.py --otp-id OTP-V7-001A-LOCAL-AUTOMATION-RUNNER-R1",
     "automation:guard": "python automation/scripts/guard_changed_paths.py --otp-id OTP-V7-001A-LOCAL-AUTOMATION-RUNNER-R1",
