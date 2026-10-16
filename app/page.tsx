@@ -1,4 +1,5 @@
-import { AppShell, PresentationState } from "../src/ui/interface-core";
+import { DailySummary } from "../src/ui/daily-summary";
+import { AppShell } from "../src/ui/interface-core";
 
 export default function Home() {
   return (
@@ -9,7 +10,7 @@ export default function Home() {
         <p>
           Shared V7 interface shell only. No authoritative Observer OS data is connected.
         </p>
-        <PresentationState state="EMPTY" />
+        <DailySummary />
       </section>
     </AppShell>
   );
