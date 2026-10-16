@@ -30,7 +30,7 @@
     {"otp_id":"OTP-V7-030-INSIGHT-ANALYSIS-CONTRACT-R1","artifact":"automation/otps/OTP-V7-030-INSIGHT-ANALYSIS-CONTRACT-R1.json","status":"receipt_verified","depends_on":["OTP-V7-005-MOCK-ADAPTERS-R1"]},
     {"otp_id":"OTP-V7-031-INSIGHT-ANALYSIS-PAGE-R1","artifact":"automation/otps/OTP-V7-031-INSIGHT-ANALYSIS-PAGE-R1.json","status":"receipt_verified","depends_on":["OTP-V7-030-INSIGHT-ANALYSIS-CONTRACT-R1"]},
     {"otp_id":"OTP-V7-032-HEALTH-GOVERNANCE-CONTRACT-R1","artifact":"automation/otps/OTP-V7-032-HEALTH-GOVERNANCE-CONTRACT-R1.json","status":"receipt_verified","depends_on":["OTP-V7-005-MOCK-ADAPTERS-R1"]},
-    {"otp_id":"OTP-V7-033-HEALTH-GOVERNANCE-PAGE-R1","artifact":null,"status":"backlog","depends_on":["OTP-V7-032-HEALTH-GOVERNANCE-CONTRACT-R1"]},
+    {"otp_id":"OTP-V7-033-HEALTH-GOVERNANCE-PAGE-R1","artifact":"automation/otps/OTP-V7-033-HEALTH-GOVERNANCE-PAGE-R1.json","status":"admitted","depends_on":["OTP-V7-032-HEALTH-GOVERNANCE-CONTRACT-R1"]},
     {"otp_id":"OTP-V7-034-ACCOUNTING-CONTRACT-R1","artifact":null,"status":"backlog","depends_on":["OTP-V7-005-MOCK-ADAPTERS-R1"]},
     {"otp_id":"OTP-V7-035-ACCOUNTING-PAGE-R1","artifact":null,"status":"backlog","depends_on":["OTP-V7-034-ACCOUNTING-CONTRACT-R1"]},
     {"otp_id":"OTP-V7-040-AUTOMATION-ADMISSION-CONTRACT-R1","artifact":null,"status":"backlog","depends_on":["OTP-V7-001-AUTOMATION-CONTROL-PLANE-R1"]},
