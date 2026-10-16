@@ -1,0 +1,3 @@
+import { PresentationState } from "./interface-core";
+const modules=[{label:"Website service",source:"Approved website-workflow reference required"},{label:"Reservation workflow",source:"ObserverOS confirmation reference required"},{label:"Daily site updates",source:"Approved external-workflow reference required"}] as const;
+export function DailyWebsite(){return <section className="daily-website" aria-labelledby="daily-website-title"><h2 id="daily-website-title">Website workflow</h2><p>External workflow authority is not connected.</p><div className="website-modules">{modules.map((module)=><article className="website-module" key={module.label}><h3>{module.label}</h3><p>{module.source}</p></article>)}</div><PresentationState state="EMPTY" /></section>;}
