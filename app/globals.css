@@ -24,11 +24,13 @@ button { font: inherit; }
 .weekly-finance { margin-top:2rem; }.weekly-finance > p { color:var(--v7-muted); font-size:.82rem; }.weekly-finance-panels { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:.75rem; }.weekly-finance-panel { min-height:6rem; border:1px solid var(--v7-line); border-radius:.7rem; background:#fffafa; padding:.8rem; }.weekly-finance-panel h3 { margin:0; font-size:.85rem; }.weekly-finance-panel p { margin:.45rem 0 0; color:var(--v7-muted); font-size:.78rem; }
 .insight-analysis { margin-top:2rem; }.insight-analysis > p { color:var(--v7-muted); font-size:.82rem; }.insight-analysis-panels { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:.75rem; }.insight-analysis-panel { min-height:6rem; border:1px solid var(--v7-line); border-radius:.7rem; background:#fffafa; padding:.8rem; }.insight-analysis-panel h3 { margin:0; font-size:.85rem; }.insight-analysis-panel p { margin:.45rem 0 0; color:var(--v7-muted); font-size:.78rem; }
 .health-governance { margin-top:2rem; }.health-governance > p { color:var(--v7-muted); font-size:.82rem; }.health-governance-panels { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:.75rem; }.health-governance-panel { min-height:6rem; border:1px solid var(--v7-line); border-radius:.7rem; background:#fffafa; padding:.8rem; }.health-governance-panel h3 { margin:0; font-size:.85rem; }.health-governance-panel p { margin:.45rem 0 0; color:var(--v7-muted); font-size:.78rem; }
+.accounting-view { margin-top:2rem; }.accounting-view > p { color:var(--v7-muted); font-size:.82rem; }.accounting-view-panels { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:.75rem; }.accounting-view-panel { min-height:6rem; border:1px solid var(--v7-line); border-radius:.7rem; background:#fffafa; padding:.8rem; }.accounting-view-panel h3 { margin:0; font-size:.85rem; }.accounting-view-panel p { margin:.45rem 0 0; color:var(--v7-muted); font-size:.78rem; }
 @media (max-width:599px) { .calendar-shell { grid-template-columns:repeat(2,minmax(0,1fr)); } }
 @media (max-width:599px) { .weekly-operation-panels { grid-template-columns:1fr; } }
 @media (max-width:599px) { .weekly-finance-panels { grid-template-columns:1fr; } }
 @media (max-width:599px) { .insight-analysis-panels { grid-template-columns:1fr; } }
 @media (max-width:599px) { .health-governance-panels { grid-template-columns:1fr; } }
+@media (max-width:599px) { .accounting-view-panels { grid-template-columns:1fr; } }
 .daily-priority { margin-top: 1.5rem; }
 .task-marquee { border: 1px solid var(--v7-line); border-radius: 0.8rem; background: var(--v7-pink-soft); padding: 1rem; }
 .task-marquee h2, .priority-stack h2 { margin: 0; font-size: 0.95rem; }

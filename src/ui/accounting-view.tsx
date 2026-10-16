@@ -1,0 +1,3 @@
+import { PresentationState } from "./interface-core";
+const panels=["Accounting","Invoice workflow"] as const;
+export function AccountingView(){return <section className="accounting-view" aria-labelledby="accounting-view-title"><h2 id="accounting-view-title">INSIGHT · Accounting</h2><p>Approved ObserverOS authority is required. No accounting content is connected.</p><div className="accounting-view-panels">{panels.map((panel)=><article className="accounting-view-panel" key={panel}><h3>{panel}</h3><p>EMPTY — approved opaque projection required</p></article>)}</div><PresentationState state="EMPTY" /></section>;}
