@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "otp_id": "OTP-V7-002-V7-BASELINE-EVIDENCE-R1",
+  "title": "Capture frozen V7 baseline evidence",
+  "status": "admitted",
+  "depends_on": ["OTP-V7-001A-LOCAL-AUTOMATION-RUNNER-R1"],
+  "req_ids": ["REQ-001", "REQ-007", "REQ-025", "REQ-034", "GAP-012"],
+  "allowed_paths": [
+    "baseline/",
+    "automation/",
+    "docs/"
+  ],
+  "prohibited_actions": [
+    "No modification, replacement, or reformatting of F:/CDriveOffload/UserFolders/Desktop/ObserverOS_PinkHouse_V7_Full_Responsive_Demo.html",
+    "No Dashboard application implementation",
+    "No ObserverOS source, database, API, credential, media, or deployment access",
+    "No visual redesign or change request",
+    "No fabricated screenshot or inferred DOM evidence"
+  ],
+  "acceptance": [
+    "Record the exact source path, byte length, SHA256, inspected timestamp, and static implementation inventory",
+    "Generate machine-readable DOM/CSS/function evidence from the unmodified source",
+    "Capture deterministic desktop and mobile screenshots from the exact source using a documented local browser command",
+    "Record viewport, browser version, source SHA256, screenshot SHA256, and capture result for every fixture",
+    "A missing capture capability is HOLD_VISUAL_FIXTURES, not PASS"
+  ],
+  "evidence_required": [
+    "baseline manifest",
+    "DOM/CSS/function inventory",
+    "desktop and mobile screenshot files with hashes",
+    "capture command and browser version",
+    "GitHub Actions result",
+    "structured receipt"
+  ]
+}
