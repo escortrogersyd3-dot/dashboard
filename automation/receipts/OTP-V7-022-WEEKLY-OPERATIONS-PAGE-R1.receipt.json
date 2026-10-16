@@ -1,0 +1,28 @@
+{
+  "otp_id": "OTP-V7-022-WEEKLY-OPERATIONS-PAGE-R1",
+  "otp_sha256": "d56734172649e06f5334e27f15d67fb5d6c8997ec6d92951b82ad5beed8b0a00",
+  "git_commit": "ebdafc10183511221c77f0059a70556a774cb071",
+  "status": "pass",
+  "changed_paths": [
+    "app/globals.css",
+    "app/page.tsx",
+    "automation/scripts/verify_weekly_operations_shell.mjs",
+    "docs/contracts/V7-022_WEEKLY_OPERATIONS_BOUNDARY.md",
+    "package.json",
+    "src/ui/weekly-operations.tsx"
+  ],
+  "checks": [
+    "Backup manifest: E:/dashboard-backups/dashboard-v7-022-20261016T064651Z/BACKUP_MANIFEST.md",
+    "Frozen V7 SHA256 matches: PASS",
+    "Three fixed EMPTY operations panels: PASS",
+    "Weekly operations shell boundary verification: PASS",
+    "No network primitive, detail field, calculation, or local filter: PASS",
+    "TypeScript typecheck: PASS",
+    "Next.js production build: PASS",
+    "GitHub PR control-plane validation: PASS"
+  ],
+  "holds": [
+    "HOLD_LIVE_INTEGRATION: no audited ObserverOS browser-safe weekly operations interface is available.",
+    "HOLD_DATA_CLASSIFICATION: no approved people, security, or inventory disclosure policy is available."
+  ]
+}
