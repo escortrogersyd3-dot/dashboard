@@ -1,0 +1,21 @@
+{
+  "otp_id": "OTP-V7-001-AUTOMATION-CONTROL-PLANE-R1",
+  "otp_sha256": "cf78f1dd63d8cdca11f224d34ba5111732eded23460271984a44997dc409a91f",
+  "git_commit": "5fd56aadc5d1fd3d2d9269b81590128e3dd11ba1",
+  "status": "pass",
+  "changed_paths": [
+    "AGENTS.md",
+    "README.md",
+    ".github/ISSUE_TEMPLATE/otp.yml",
+    ".github/pull_request_template.md",
+    ".github/workflows/control-plane.yml",
+    ".github/workflows/otp-admission.yml",
+    "automation/"
+  ],
+  "checks": [
+    "local control-plane validator: PASS",
+    "GitHub Control plane validation: PASS",
+    "GitHub OTP admission validation for issue #1: PASS"
+  ],
+  "holds": []
+}
