@@ -7,6 +7,7 @@ import { WeeklyOperations } from "../src/ui/weekly-operations";
 import { WeeklyFinance } from "../src/ui/weekly-finance";
 import { InsightAnalysis } from "../src/ui/insight-analysis";
 import { HealthGovernance } from "../src/ui/health-governance";
+import { AccountingView } from "../src/ui/accounting-view";
 import { AppShell } from "../src/ui/interface-core";
 
 export default function Home() {
@@ -27,6 +28,7 @@ export default function Home() {
         <WeeklyFinance />
         <InsightAnalysis />
         <HealthGovernance />
+        <AccountingView />
       </section>
     </AppShell>
   );
