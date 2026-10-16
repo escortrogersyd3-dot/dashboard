@@ -3,6 +3,7 @@
 .env.*.local
 !.env.example
 node_modules/
+__pycache__/
 .next/
 coverage/
 playwright-report/
