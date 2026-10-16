@@ -6,4 +6,6 @@ const headings = ["Objective and exit result", "Entry gates and shared constrain
 for (const id of ids) if (!source.includes(id)) throw new Error(`missing planned OTP: ${id}`);
 for (const heading of headings) if (!source.includes(heading)) throw new Error(`missing governance heading: ${heading}`);
 if (!source.includes("HOLD_LIVE_INTEGRATION")) throw new Error("missing live integration hold");
+const state = JSON.parse(readFileSync("automation/preos-phase-state.json", "utf8"));
+if (state.status !== "planning_complete" || state.live_integration !== "HOLD_LIVE_INTEGRATION" || state.dashboard_database !== "prohibited") throw new Error("invalid Pre-ObserverOS phase control state");
 console.log("Pre-ObserverOS phase plan verification: PASS");
