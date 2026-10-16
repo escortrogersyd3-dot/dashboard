@@ -35,6 +35,7 @@
     "preos-regression:verify": "node automation/scripts/run_full_preos_regression.mjs",
     "preos-showcase:verify": "node automation/scripts/verify_preos_showcase.mjs",
     "v7-fidelity-shell:verify": "node automation/scripts/verify_v7_fidelity_shell.mjs",
+    "local-interaction-shell:verify": "node automation/scripts/verify_local_interaction_shell.mjs",
     "control-plane:validate": "python automation/scripts/validate_control_plane.py",
     "automation:preflight": "python automation/scripts/preflight.py --otp-id OTP-V7-001A-LOCAL-AUTOMATION-RUNNER-R1",
     "automation:guard": "python automation/scripts/guard_changed_paths.py --otp-id OTP-V7-001A-LOCAL-AUTOMATION-RUNNER-R1",
