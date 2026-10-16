@@ -1,0 +1,9 @@
+{
+  "otp_id": "OTP-V7-013-OBSERVATION-CONTRACT-R1",
+  "otp_sha256": "0cc56ce45077a512db0ece65576c379bafe26d600810fdf88374d079e978eeab",
+  "git_commit": "442e7c9b8be8f254a563b63b2a7afbec4439c939",
+  "status": "pass",
+  "changed_paths": ["automation/scripts/verify_daily_observation_contract.mjs", "docs/contracts/PROPOSED_DAILY_OBSERVATION_READ_CONTRACT_V1.md", "package.json", "schemas/proposed-daily-observation-v1.schema.json", "src/adapters/proposed-daily-observation-contract.js"],
+  "checks": ["Backup manifest: E:/dashboard-backups/dashboard-v7-013-20261016T063236Z/BACKUP_MANIFEST.md", "Frozen V7 SHA256 matches: PASS", "Opaque reference and redaction boundary: PASS", "Observation negative fixture verification: PASS", "No network primitive: PASS", "TypeScript typecheck: PASS", "Next.js production build: PASS", "GitHub PR control-plane validation: PASS"],
+  "holds": ["HOLD_LIVE_INTEGRATION: no audited ObserverOS browser-safe observation interface is available.", "HOLD_MEDIA_AUTHORIZATION: no approved resolver, expiry, redaction, revocation, or audit behavior is available."]
+}
