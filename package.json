@@ -27,6 +27,7 @@
     "insight-analysis-contract:verify": "node automation/scripts/verify_insight_analysis_contract.mjs",
     "insight-analysis-shell:verify": "node automation/scripts/verify_insight_analysis_shell.mjs",
     "health-governance-contract:verify": "node automation/scripts/verify_health_governance_contract.mjs",
+    "health-governance-shell:verify": "node automation/scripts/verify_health_governance_shell.mjs",
     "control-plane:validate": "python automation/scripts/validate_control_plane.py",
     "automation:preflight": "python automation/scripts/preflight.py --otp-id OTP-V7-001A-LOCAL-AUTOMATION-RUNNER-R1",
     "automation:guard": "python automation/scripts/guard_changed_paths.py --otp-id OTP-V7-001A-LOCAL-AUTOMATION-RUNNER-R1",
