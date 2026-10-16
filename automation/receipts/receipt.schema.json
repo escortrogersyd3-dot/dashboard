@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Dashboard OTP execution receipt",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["otp_id", "otp_sha256", "git_commit", "status", "changed_paths", "checks", "holds"],
+  "properties": {
+    "otp_id": {"type": "string", "pattern": "^OTP-V7-"},
+    "otp_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "git_commit": {"type": "string", "minLength": 7},
+    "status": {"enum": ["pass", "hold", "fail"]},
+    "changed_paths": {"type": "array", "items": {"type": "string"}},
+    "checks": {"type": "array", "items": {"type": "string"}},
+    "holds": {"type": "array", "items": {"type": "string"}}
+  }
+}

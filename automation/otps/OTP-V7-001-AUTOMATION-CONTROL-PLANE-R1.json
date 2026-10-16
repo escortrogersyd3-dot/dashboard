@@ -1,0 +1,34 @@
+{
+  "schema_version": "1.0",
+  "otp_id": "OTP-V7-001-AUTOMATION-CONTROL-PLANE-R1",
+  "title": "Establish Dashboard automation control plane",
+  "status": "admitted",
+  "depends_on": [],
+  "req_ids": ["GAP-010"],
+  "allowed_paths": [
+    "AGENTS.md",
+    "README.md",
+    ".github/",
+    "automation/",
+    "docs/"
+  ],
+  "prohibited_actions": [
+    "No Dashboard application implementation",
+    "No ObserverOS source, database, API, credential, media, or deployment access",
+    "No production deployment",
+    "No change to frozen V7 baseline"
+  ],
+  "acceptance": [
+    "Catalog validates with no missing dependencies or duplicate IDs",
+    "OTP artifact validates against the repository template",
+    "GitHub Action verifies control-plane artifacts on push and pull request",
+    "GitHub Issue template captures OTP ID and SHA256",
+    "PR template captures scope, evidence, HOLD, and receipt fields"
+  ],
+  "evidence_required": [
+    "control-plane validation output",
+    "Git commit SHA",
+    "GitHub Actions run result",
+    "structured receipt"
+  ]
+}

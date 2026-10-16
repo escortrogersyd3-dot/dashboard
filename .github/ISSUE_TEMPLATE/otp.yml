@@ -1,0 +1,33 @@
+name: OTP admission
+description: Admit one exact Dashboard OTP into the automated queue.
+title: "OTP: "
+body:
+  - type: input
+    id: otp_id
+    attributes:
+      label: OTP ID
+      description: Must exactly match an artifact in automation/otps.
+      placeholder: OTP-V7-001-AUTOMATION-CONTROL-PLANE-R1
+    validations:
+      required: true
+  - type: input
+    id: otp_sha256
+    attributes:
+      label: OTP SHA256
+      description: SHA256 of the exact UTF-8 artifact bytes.
+      placeholder: 64 lowercase hexadecimal characters
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Admission evidence
+      description: State the dependency receipts and expected machine checks.
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: |
+        Automation requires these exact hidden markers in the issue body:
+        <!-- OTP-ID: OTP-V7-... -->
+        <!-- OTP-SHA256: 64 lowercase hexadecimal characters -->

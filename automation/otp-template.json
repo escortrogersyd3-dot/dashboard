@@ -1,0 +1,26 @@
+{
+  "schema_version": "1.0",
+  "required_fields": [
+    "otp_id",
+    "title",
+    "status",
+    "depends_on",
+    "req_ids",
+    "allowed_paths",
+    "prohibited_actions",
+    "acceptance",
+    "evidence_required"
+  ],
+  "allowed_statuses": [
+    "backlog",
+    "admitted",
+    "codex_running",
+    "pr_ready",
+    "audit_pass",
+    "merged",
+    "receipt_verified",
+    "hold",
+    "fail"
+  ],
+  "hash_rule": "sha256 of the exact UTF-8 OTP artifact bytes; the GitHub Issue must carry the same OTP-ID and SHA256 markers"
+}

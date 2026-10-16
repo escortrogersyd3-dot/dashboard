@@ -1,0 +1,21 @@
+name: OTP admission validation
+
+on:
+  issues:
+    types: [labeled]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: read
+
+jobs:
+  verify-admitted-otp:
+    if: github.event_name == 'workflow_dispatch' || github.event.label.name == 'otp-admitted'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+      - name: Verify issue OTP markers against exact artifact bytes
+        env:
+          ISSUE_BODY: ${{ github.event.issue.body }}
+        run: python3 automation/scripts/validate_control_plane.py --verify-issue
