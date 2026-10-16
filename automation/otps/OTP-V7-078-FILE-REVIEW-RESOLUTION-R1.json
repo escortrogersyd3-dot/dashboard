@@ -1,0 +1,27 @@
+{
+  "schema_version": "1.0",
+  "otp_id": "OTP-V7-078-FILE-REVIEW-RESOLUTION-R1",
+  "title": "Record Owner-confirmed local V7 file visual review",
+  "status": "admitted",
+  "depends_on": ["OTP-V7-076-PHASE2-REGRESSION-R1"],
+  "resolves_hold": "OTP-V7-077-OFFLINE-PREVIEW-R1",
+  "req_ids": ["REQ-V7-078"],
+  "allowed_paths": ["automation/", "docs/planning/", "package.json"],
+  "prohibited_actions": [
+    "Do not modify the frozen V7 source or the offline preview artifact",
+    "Do not connect to ObserverOS, a database, a network data source, credentials, media, deployment, business calculation, AI, permission decision, or authoritative state",
+    "Do not remove HOLD_LIVE_INTEGRATION"
+  ],
+  "acceptance": [
+    "The explicit Owner confirmation in this chat is bound to the fixed local preview and frozen V7 SHA-256 values",
+    "The static preview verifier and complete Phase 2 regression remain passing",
+    "Only the direct local-file visual-review HOLD is resolved; HOLD_LIVE_INTEGRATION remains explicit"
+  ],
+  "evidence_required": [
+    "unique pre-execution backup manifest",
+    "Owner confirmation record",
+    "fixed-artifact hash verification",
+    "offline verifier, Phase 2 regression, typecheck, build, and control-plane results",
+    "GitHub audit and immutable structured receipt"
+  ]
+}

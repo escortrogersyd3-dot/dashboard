@@ -1,6 +1,6 @@
 {
   "phase_id": "OBSERVEROS_OFFLINE_PHASE_2_R1",
-  "status": "planning_complete",
+  "status": "PASS_OFFLINE_V7_PHASE2_PREVIEW",
   "plan": "docs/planning/OBSERVEROS_OFFLINE_PHASE_2_R1.md",
   "entry_result": "HOLD_V7_061_BASELINE_RECONCILIATION",
   "frozen_v7_sha256": "cbafbb0fb3944071e7c8605037f7be2aba9389047cc36e2ad1767b5444ce21ec",
@@ -20,5 +20,8 @@
     "public/preobserveros-showcase.html",
     "automation/scripts/verify_preos_showcase.mjs"
   ],
-  "final_preview": "public/observeros-v7-offline-preview.html"
+  "final_preview": "public/observeros-v7-offline-preview.html",
+  "final_preview_sha256": "8706d8cd6585dcd1a4d58be0a377d1ffe8d0228c5362d0fcb6abf93c5a2d627a",
+  "completion_resolution": "OTP-V7-078-FILE-REVIEW-RESOLUTION-R1",
+  "retained_gate": "HOLD_LIVE_INTEGRATION"
 }
