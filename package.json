@@ -16,6 +16,7 @@
     "daily-html-preview:verify": "node automation/scripts/verify_daily_html_preview.mjs",
     "preos-phase-plan:verify": "node automation/scripts/verify_preos_phase_plan.mjs",
     "daily-observation-contract:verify": "node automation/scripts/verify_daily_observation_contract.mjs",
+    "daily-observation-shell:verify": "node automation/scripts/verify_daily_observation_shell.mjs",
     "control-plane:validate": "python automation/scripts/validate_control_plane.py",
     "automation:preflight": "python automation/scripts/preflight.py --otp-id OTP-V7-001A-LOCAL-AUTOMATION-RUNNER-R1",
     "automation:guard": "python automation/scripts/guard_changed_paths.py --otp-id OTP-V7-001A-LOCAL-AUTOMATION-RUNNER-R1",
