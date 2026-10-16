@@ -3,6 +3,7 @@ import { DailyPriorityStack } from "../src/ui/daily-priority-stack";
 import { DailyObservation } from "../src/ui/daily-observation";
 import { DailyWebsite } from "../src/ui/daily-website";
 import { WeeklyCalendar } from "../src/ui/weekly-calendar";
+import { WeeklyOperations } from "../src/ui/weekly-operations";
 import { AppShell } from "../src/ui/interface-core";
 
 export default function Home() {
@@ -19,6 +20,7 @@ export default function Home() {
         <DailyWebsite />
         <DailySummary />
         <WeeklyCalendar />
+        <WeeklyOperations />
       </section>
     </AppShell>
   );
