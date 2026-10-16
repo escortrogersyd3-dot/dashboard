@@ -5,7 +5,7 @@
   "packageManager": "pnpm@11.25.0",
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build --webpack",
     "start": "next start",
     "typecheck": "tsc --noEmit",
     "control-plane:validate": "python automation/scripts/validate_control_plane.py",
@@ -15,7 +15,7 @@
     "automation:receipt-draft": "python automation/scripts/draft_receipt.py --otp-id OTP-V7-001A-LOCAL-AUTOMATION-RUNNER-R1"
   },
   "dependencies": {
-    "next": "16.4.2",
+    "next": "16.4.0",
     "react": "19.3.1",
     "react-dom": "19.3.1"
   },
