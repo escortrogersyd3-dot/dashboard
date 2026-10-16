@@ -1,4 +1,5 @@
 import { DailySummary } from "../src/ui/daily-summary";
+import { DailyPriorityStack } from "../src/ui/daily-priority-stack";
 import { AppShell } from "../src/ui/interface-core";
 
 export default function Home() {
@@ -10,6 +11,7 @@ export default function Home() {
         <p>
           Shared V7 interface shell only. No authoritative Observer OS data is connected.
         </p>
+        <DailyPriorityStack />
         <DailySummary />
       </section>
     </AppShell>
