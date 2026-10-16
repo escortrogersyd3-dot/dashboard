@@ -1,0 +1,2 @@
+export const ACCOUNTING_VIEW_PROPOSAL=Object.freeze({schema_version:"proposed-accounting-view-v1",status_values:["LOADING","EMPTY","STALE","UNKNOWN","ERROR","PERMISSION"],allowed_data_keys:["projection_ref","availability"],mode:"PROPOSED / MOCK-ONLY"});
+export function mockAccountingViewEnvelope(status="UNKNOWN"){return {schema_version:ACCOUNTING_VIEW_PROPOSAL.schema_version,request_id:"mock-accounting-view",as_of:"unknown",freshness:"unknown",permission:"unknown",status,data:null,limitations:["HOLD_LIVE_INTEGRATION"],provenance:["opaque-observeros-reference-required"]};}
