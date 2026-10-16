@@ -1,0 +1,3 @@
+import { PresentationState } from "./interface-core";
+const panels=["Analysis","Advice","Focus"] as const;
+export function InsightAnalysis(){return <section className="insight-analysis" aria-labelledby="insight-analysis-title"><h2 id="insight-analysis-title">INSIGHT · Analysis</h2><p>Approved ObserverOS authority is required. No insight content is connected.</p><div className="insight-analysis-panels">{panels.map((panel)=><article className="insight-analysis-panel" key={panel}><h3>{panel}</h3><p>EMPTY — approved opaque result required</p></article>)}</div><PresentationState state="EMPTY" /></section>;}
