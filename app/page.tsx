@@ -1,6 +1,7 @@
 import { DailySummary } from "../src/ui/daily-summary";
 import { DailyPriorityStack } from "../src/ui/daily-priority-stack";
 import { DailyObservation } from "../src/ui/daily-observation";
+import { DailyWebsite } from "../src/ui/daily-website";
 import { AppShell } from "../src/ui/interface-core";
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
         </p>
         <DailyPriorityStack />
         <DailyObservation />
+        <DailyWebsite />
         <DailySummary />
       </section>
     </AppShell>
