@@ -1,0 +1,3 @@
+import { PresentationState } from "./interface-core";
+const panels=["Health","Governance"] as const;
+export function HealthGovernance(){return <section className="health-governance" aria-labelledby="health-governance-title"><h2 id="health-governance-title">INSIGHT · Health and governance</h2><p>Approved ObserverOS authority is required. No health or governance content is connected.</p><div className="health-governance-panels">{panels.map((panel)=><article className="health-governance-panel" key={panel}><h3>{panel}</h3><p>EMPTY — approved opaque projection required</p></article>)}</div><PresentationState state="EMPTY" /></section>;}
