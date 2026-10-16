@@ -1,0 +1,25 @@
+{
+  "otp_id": "OTP-V7-003-APPLICATION-SCAFFOLD-R1",
+  "otp_sha256": "e34d80a6663c629cef6b55925e7fed57d248c40f37855e12fbfc81be497d98d8",
+  "git_commit": "f7948630932b4a9871feba0875fc58fdf726e0a6",
+  "status": "pass",
+  "changed_paths": [
+    "app/globals.css",
+    "app/layout.tsx",
+    "app/page.tsx",
+    "next-env.d.ts",
+    "next.config.ts",
+    "package.json",
+    "pnpm-lock.yaml",
+    "src/lib/runtime-boundary.ts",
+    "tsconfig.json"
+  ],
+  "checks": [
+    "Mock-only boundary present: PASS",
+    "TypeScript typecheck: PASS",
+    "Next.js production build: PASS",
+    "Control-plane validation: PASS",
+    "GitHub PR control-plane validation: PASS"
+  ],
+  "holds": []
+}
