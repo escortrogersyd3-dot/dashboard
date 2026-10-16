@@ -1,13 +1,28 @@
 {
-  "name": "observeros-dashboard-control-plane",
+  "name": "observeros-dashboard",
   "private": true,
-  "version": "0.0.0-control-plane",
+  "version": "0.1.0",
   "packageManager": "pnpm@11.25.0",
   "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "tsc --noEmit",
     "control-plane:validate": "python automation/scripts/validate_control_plane.py",
     "automation:preflight": "python automation/scripts/preflight.py --otp-id OTP-V7-001A-LOCAL-AUTOMATION-RUNNER-R1",
     "automation:guard": "python automation/scripts/guard_changed_paths.py --otp-id OTP-V7-001A-LOCAL-AUTOMATION-RUNNER-R1",
     "automation:guard:sample": "python automation/scripts/guard_changed_paths.py --otp-id OTP-V7-001A-LOCAL-AUTOMATION-RUNNER-R1 --paths .env.example .gitignore package.json automation/local-runner.config.json",
     "automation:receipt-draft": "python automation/scripts/draft_receipt.py --otp-id OTP-V7-001A-LOCAL-AUTOMATION-RUNNER-R1"
+  },
+  "dependencies": {
+    "next": "16.4.2",
+    "react": "19.3.1",
+    "react-dom": "19.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "26.6.5",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "typescript": "7.0.2"
   }
 }
