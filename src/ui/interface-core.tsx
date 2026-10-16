@@ -73,7 +73,7 @@ export function AppShell({ activeSection: initialSection, children }: { activeSe
 
   function selectSection(section: ShellSection) {
     setActiveSection(section);
-    document.getElementById(section)?.scrollIntoView({ behavior: "smooth", block: "start" });
+    document.getElementById(section)?.scrollIntoView({ behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth", block: "start" });
   }
 
   function openSurface(next: Exclude<Surface, null>, opener: HTMLButtonElement) {
@@ -83,6 +83,7 @@ export function AppShell({ activeSection: initialSection, children }: { activeSe
   }
 
   return <div className="v7-shell">
+    <a className="v7-skip-link" href="#main-content">跳到主要内容 / Chuyển đến nội dung chính</a>
     <aside className="v7-sidebar" aria-label="Desktop presentation navigation">
       <div className="v7-brand"><strong>Observer OS</strong><span>Pink House · V7</span><small>低眩光深灰 / 中国红告警 / 橙色经营指标</small></div>
       <div><p className="v7-side-label">展示角色 · 非真实登录</p><div className="v7-role-list">{roles.map((role, index) => <div className={["v7-role", index === 0 ? "is-active" : ""].filter(Boolean).join(" ")} key={role.label}><span>{role.label}</span><small>{role.note}</small></div>)}</div></div>
@@ -91,7 +92,7 @@ export function AppShell({ activeSection: initialSection, children }: { activeSe
     </aside>
     <div className="v7-stage">
       <header className="v7-mast"><div><h1>DAILY · 当前态势</h1><p>冻结 V7 表面外壳 · 无已连接业务数据</p></div><div className="v7-toolbar"><span>LOCAL · PRESENTATION ONLY</span><button type="button" className="v7-toolbar-button" onClick={(event) => openSurface("drawer", event.currentTarget)} aria-haspopup="dialog" aria-label="打开冻结页面导航抽屉">▷ 自动巡查 · HOLD</button><button type="button" className="v7-toolbar-button" onClick={(event) => openSurface("dialog", event.currentTarget)} aria-haspopup="dialog" aria-label="打开展示边界说明">手动模式</button></div></header>
-      <main className="v7-content">{children}</main>
+      <main className="v7-content" id="main-content" tabIndex={-1}>{children}</main>
     </div>
     <Navigation activeSection={activeSection} mobile onSelect={selectSection} />
     <dialog ref={dialogRef} className={surface === "drawer" ? "v7-surface v7-drawer" : "v7-surface"} aria-labelledby="surface-title" onClose={closeSurface}>
