@@ -47,5 +47,6 @@
     ,{"otp_id":"OTP-V7-075-ADAPTER-READINESS-R1","artifact":"automation/otps/OTP-V7-075-ADAPTER-READINESS-R1.json","status":"backlog","depends_on":["OTP-V7-073-PRESENTATION-STATES-I18N-R1"]}
     ,{"otp_id":"OTP-V7-076-PHASE2-REGRESSION-R1","artifact":"automation/otps/OTP-V7-076-PHASE2-REGRESSION-R1.json","status":"backlog","depends_on":["OTP-V7-074-A11Y-RESPONSIVE-R1","OTP-V7-075-ADAPTER-READINESS-R1"]}
     ,{"otp_id":"OTP-V7-077-OFFLINE-PREVIEW-R1","artifact":"automation/otps/OTP-V7-077-OFFLINE-PREVIEW-R1.json","status":"backlog","depends_on":["OTP-V7-076-PHASE2-REGRESSION-R1"]}
+    ,{"otp_id":"OTP-V7-061-SHOWCASE-BASELINE-RECONCILIATION-R2","artifact":"automation/otps/OTP-V7-061-SHOWCASE-BASELINE-RECONCILIATION-R2.json","status":"admitted","depends_on":["OTP-V7-051-PREOS-SHOWCASE-R1"]}
   ]
 }
