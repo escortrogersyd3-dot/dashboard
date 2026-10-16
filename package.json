@@ -30,6 +30,7 @@
     "health-governance-shell:verify": "node automation/scripts/verify_health_governance_shell.mjs",
     "accounting-contract:verify": "node automation/scripts/verify_accounting_contract.mjs",
     "accounting-shell:verify": "node automation/scripts/verify_accounting_shell.mjs",
+    "automation-admission-contract:verify": "node automation/scripts/verify_automation_admission_contract.mjs",
     "control-plane:validate": "python automation/scripts/validate_control_plane.py",
     "automation:preflight": "python automation/scripts/preflight.py --otp-id OTP-V7-001A-LOCAL-AUTOMATION-RUNNER-R1",
     "automation:guard": "python automation/scripts/guard_changed_paths.py --otp-id OTP-V7-001A-LOCAL-AUTOMATION-RUNNER-R1",
