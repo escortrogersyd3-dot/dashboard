@@ -34,7 +34,7 @@
     {"otp_id":"OTP-V7-034-ACCOUNTING-CONTRACT-R1","artifact":"automation/otps/OTP-V7-034-ACCOUNTING-CONTRACT-R1.json","status":"receipt_verified","depends_on":["OTP-V7-005-MOCK-ADAPTERS-R1"]},
     {"otp_id":"OTP-V7-035-ACCOUNTING-PAGE-R1","artifact":"automation/otps/OTP-V7-035-ACCOUNTING-PAGE-R1.json","status":"receipt_verified","depends_on":["OTP-V7-034-ACCOUNTING-CONTRACT-R1"]},
     {"otp_id":"OTP-V7-040-AUTOMATION-ADMISSION-CONTRACT-R1","artifact":"automation/otps/OTP-V7-040-AUTOMATION-ADMISSION-CONTRACT-R1.json","status":"receipt_verified","depends_on":["OTP-V7-001-AUTOMATION-CONTROL-PLANE-R1"]},
-    {"otp_id":"OTP-V7-041-AUTOMATION-ADMISSION-ADAPTER-R1","artifact":"automation/otps/OTP-V7-041-AUTOMATION-ADMISSION-ADAPTER-R1.json","status":"admitted","depends_on":["OTP-V7-040-AUTOMATION-ADMISSION-CONTRACT-R1"]},
+    {"otp_id":"OTP-V7-041-AUTOMATION-ADMISSION-ADAPTER-R1","artifact":"automation/otps/OTP-V7-041-AUTOMATION-ADMISSION-ADAPTER-R1.json","status":"receipt_verified","depends_on":["OTP-V7-040-AUTOMATION-ADMISSION-CONTRACT-R1"]},
     {"otp_id":"OTP-V7-050-FULL-REGRESSION-R1","artifact":null,"status":"backlog","depends_on":["OTP-V7-011-DAILY-SUMMARY-R1","OTP-V7-014-OBSERVATION-PAGE-R1","OTP-V7-016-WEBSITE-MODULES-R1","OTP-V7-022-WEEKLY-OPERATIONS-PAGE-R1","OTP-V7-024-WEEKLY-FINANCE-PAGE-R1","OTP-V7-031-INSIGHT-ANALYSIS-PAGE-R1","OTP-V7-033-HEALTH-GOVERNANCE-PAGE-R1","OTP-V7-035-ACCOUNTING-PAGE-R1"]}
     ,{"otp_id":"OTP-V7-051-PREOS-SHOWCASE-R1","artifact":null,"status":"backlog","depends_on":["OTP-V7-050-FULL-REGRESSION-R1"]}
     ,{"otp_id":"OTP-V7-060-PREOS-PHASE-PLAN-R1","artifact":"automation/otps/OTP-V7-060-PREOS-PHASE-PLAN-R1.json","status":"receipt_verified","depends_on":["OTP-V7-012A-DAILY-HTML-PREVIEW-R1"]}
