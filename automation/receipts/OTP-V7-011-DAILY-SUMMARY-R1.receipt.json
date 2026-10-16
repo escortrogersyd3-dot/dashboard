@@ -1,0 +1,27 @@
+{
+  "otp_id": "OTP-V7-011-DAILY-SUMMARY-R1",
+  "otp_sha256": "ea8a8068d4c71e2367e5581ed46b962afbd165c91806a6bc44e6812ba92e3548",
+  "git_commit": "70c811036f1a0b4237ccc674d15a33a5a4fd605a",
+  "status": "pass",
+  "changed_paths": [
+    "app/globals.css",
+    "app/page.tsx",
+    "automation/scripts/verify_daily_summary.mjs",
+    "docs/contracts/V7-011_DAILY_SUMMARY_BOUNDARY.md",
+    "package.json",
+    "src/ui/daily-summary.tsx"
+  ],
+  "checks": [
+    "Backup manifest: E:/dashboard-backups/dashboard-v7-011-20261016T060828Z/BACKUP_MANIFEST.md",
+    "Frozen V7 SHA256 matches: PASS",
+    "Four frozen summary slots without business values: PASS",
+    "Explicit EMPTY authority state: PASS",
+    "Daily summary verification: PASS",
+    "TypeScript typecheck: PASS",
+    "Next.js production build: PASS",
+    "GitHub PR control-plane validation: PASS"
+  ],
+  "holds": [
+    "HOLD_LIVE_INTEGRATION: no audited ObserverOS browser-safe DAILY read implementation is available."
+  ]
+}
