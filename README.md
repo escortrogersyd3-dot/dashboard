@@ -16,6 +16,7 @@
 - [V7 拆分与交付依赖](docs/planning/V7_WORK_BREAKDOWN.md)
 - [ObserverOS 缺口清单](docs/planning/OBSERVEROS_GAP_REGISTER.csv)
 - [Dashboard 接口所有权合同](docs/contracts/DASHBOARD_INTERFACE_OWNERSHIP.md)
+- [最终离线 V7 预览](public/observeros-v7-offline-preview.html)（可直接本地打开；保留 `HOLD_LIVE_INTEGRATION`）
 
 ## 冻结基线
 
