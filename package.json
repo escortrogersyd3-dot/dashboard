@@ -7,6 +7,7 @@
     "control-plane:validate": "python automation/scripts/validate_control_plane.py",
     "automation:preflight": "python automation/scripts/preflight.py --otp-id OTP-V7-001A-LOCAL-AUTOMATION-RUNNER-R1",
     "automation:guard": "python automation/scripts/guard_changed_paths.py --otp-id OTP-V7-001A-LOCAL-AUTOMATION-RUNNER-R1",
+    "automation:guard:sample": "python automation/scripts/guard_changed_paths.py --otp-id OTP-V7-001A-LOCAL-AUTOMATION-RUNNER-R1 --paths .env.example .gitignore package.json automation/local-runner.config.json",
     "automation:receipt-draft": "python automation/scripts/draft_receipt.py --otp-id OTP-V7-001A-LOCAL-AUTOMATION-RUNNER-R1"
   }
 }
