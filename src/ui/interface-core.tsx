@@ -20,18 +20,30 @@ export type ShellSection = (typeof navigation)[number]["id"];
 export type PresentationStateKind = "LOADING" | "EMPTY" | "STALE" | "UNKNOWN" | "ERROR" | "PERMISSION";
 type Surface = "drawer" | "dialog" | null;
 
-const stateCopy: Record<PresentationStateKind, { title: string; detail: string }> = {
-  LOADING: { title: "LOADING", detail: "等待经许可的 ObserverOS 响应。" },
-  EMPTY: { title: "EMPTY", detail: "没有已连接的权威数据。" },
-  STALE: { title: "STALE", detail: "未来响应必须显式提供时效。" },
-  UNKNOWN: { title: "UNKNOWN", detail: "Dashboard 不推断状态、权限或业务含义。" },
-  ERROR: { title: "ERROR", detail: "未来响应必须提供安全错误引用。" },
-  PERMISSION: { title: "PERMISSION", detail: "Dashboard 不决定访问；仅显化 ObserverOS 结果。" },
+export type OfflinePresentationFixture = Readonly<{ state: PresentationStateKind; data: null }>;
+
+export const OFFLINE_PRESENTATION_FIXTURES: Readonly<Record<PresentationStateKind, OfflinePresentationFixture>> = {
+  LOADING: { state: "LOADING", data: null },
+  EMPTY: { state: "EMPTY", data: null },
+  STALE: { state: "STALE", data: null },
+  UNKNOWN: { state: "UNKNOWN", data: null },
+  ERROR: { state: "ERROR", data: null },
+  PERMISSION: { state: "PERMISSION", data: null },
+};
+
+const stateCopy: Record<PresentationStateKind, { title: string; chinese: string; vietnamese: string }> = {
+  LOADING: { title: "LOADING", chinese: "等待经许可的 ObserverOS 响应。", vietnamese: "Đang chờ phản hồi ObserverOS đã được cấp quyền." },
+  EMPTY: { title: "EMPTY", chinese: "没有已连接的权威数据。", vietnamese: "Không có dữ liệu có thẩm quyền đã được kết nối." },
+  STALE: { title: "STALE", chinese: "未来响应必须显式提供时效。", vietnamese: "Phản hồi trong tương lai phải nêu rõ độ mới của dữ liệu." },
+  UNKNOWN: { title: "UNKNOWN", chinese: "Dashboard 不推断状态、权限或业务含义。", vietnamese: "Dashboard không suy diễn trạng thái, quyền hoặc ý nghĩa nghiệp vụ." },
+  ERROR: { title: "ERROR", chinese: "未来响应必须提供安全错误引用。", vietnamese: "Phản hồi trong tương lai phải cung cấp tham chiếu lỗi an toàn." },
+  PERMISSION: { title: "PERMISSION", chinese: "Dashboard 不决定访问；仅显化 ObserverOS 结果。", vietnamese: "Dashboard không quyết định truy cập; chỉ hiển thị kết quả từ ObserverOS." },
 };
 
 export function PresentationState({ state }: { state: PresentationStateKind }) {
   const copy = stateCopy[state];
-  return <aside className="state-panel" aria-live={state === "LOADING" ? "polite" : undefined} aria-label={state}><strong>{copy.title}</strong><p>{copy.detail}</p></aside>;
+  const fixture = OFFLINE_PRESENTATION_FIXTURES[state];
+  return <aside className="state-panel" aria-live={state === "LOADING" ? "polite" : undefined} aria-label={state} data-state={fixture.state} data-null={String(fixture.data === null)}><strong>{copy.title}</strong><p>{copy.chinese}</p><p lang="vi">{copy.vietnamese}</p></aside>;
 }
 
 function Navigation({ activeSection, mobile = false, onSelect }: { activeSection: ShellSection; mobile?: boolean; onSelect: (section: ShellSection) => void }) {
