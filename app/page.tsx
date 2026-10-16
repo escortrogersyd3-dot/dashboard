@@ -5,6 +5,7 @@ import { DailyWebsite } from "../src/ui/daily-website";
 import { WeeklyCalendar } from "../src/ui/weekly-calendar";
 import { WeeklyOperations } from "../src/ui/weekly-operations";
 import { WeeklyFinance } from "../src/ui/weekly-finance";
+import { InsightAnalysis } from "../src/ui/insight-analysis";
 import { AppShell } from "../src/ui/interface-core";
 
 export default function Home() {
@@ -23,6 +24,7 @@ export default function Home() {
         <WeeklyCalendar />
         <WeeklyOperations />
         <WeeklyFinance />
+        <InsightAnalysis />
       </section>
     </AppShell>
   );
