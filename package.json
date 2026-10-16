@@ -13,6 +13,7 @@
     "daily-contract:verify": "node automation/scripts/verify_daily_contract.mjs",
     "daily-summary:verify": "node automation/scripts/verify_daily_summary.mjs",
     "daily-priority:verify": "node automation/scripts/verify_daily_priority_stack.mjs",
+    "daily-html-preview:verify": "node automation/scripts/verify_daily_html_preview.mjs",
     "control-plane:validate": "python automation/scripts/validate_control_plane.py",
     "automation:preflight": "python automation/scripts/preflight.py --otp-id OTP-V7-001A-LOCAL-AUTOMATION-RUNNER-R1",
     "automation:guard": "python automation/scripts/guard_changed_paths.py --otp-id OTP-V7-001A-LOCAL-AUTOMATION-RUNNER-R1",
