@@ -1,0 +1,25 @@
+{
+  "otp_id": "OTP-V7-001A-LOCAL-AUTOMATION-RUNNER-R1",
+  "otp_sha256": "701d4451f4fb4ab66db9665fad7f829b6a90d539b12305be0542cf707de8d7c8",
+  "git_commit": "cb70429b728e14a1cce1c1c6e1517192d714d8ab",
+  "status": "pass",
+  "changed_paths": [
+    ".env.example",
+    ".gitignore",
+    "package.json",
+    "pnpm-lock.yaml",
+    "automation/README.md",
+    "automation/local-runner.config.json",
+    "automation/scripts/draft_receipt.py",
+    "automation/scripts/guard_changed_paths.py",
+    "automation/scripts/preflight.py"
+  ],
+  "checks": [
+    "clean-tree Mock-only preflight: PASS",
+    "allowed-path guard: PASS",
+    "negative .env.local and database path guard: PASS",
+    "non-authoritative receipt draft: PASS",
+    "GitHub PR control-plane validation: PASS"
+  ],
+  "holds": []
+}
