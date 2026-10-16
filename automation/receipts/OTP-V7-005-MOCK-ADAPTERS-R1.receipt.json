@@ -1,0 +1,23 @@
+{
+  "otp_id": "OTP-V7-005-MOCK-ADAPTERS-R1",
+  "otp_sha256": "f41d90899399a40f110bb8a528a8f1e3a3ee637d845dec3cf859d2dde20394ac",
+  "git_commit": "3a1c4bb78c138b571fe392e299aba1f22af5e26a",
+  "status": "pass",
+  "changed_paths": [
+    "automation/scripts/verify_mock_adapters.mjs",
+    "docs/contracts/V7-005_MOCK_ADAPTER_BOUNDARY.md",
+    "package.json",
+    "src/adapters/proposed-envelope.d.ts",
+    "src/adapters/proposed-envelope.js",
+    "src/ui/interface-core.tsx"
+  ],
+  "checks": [
+    "Non-authoritative empty fixtures only: PASS",
+    "Negative state separation: PASS",
+    "Adapter source has no network primitive: PASS",
+    "TypeScript typecheck: PASS",
+    "Next.js production build: PASS",
+    "GitHub PR control-plane validation: PASS"
+  ],
+  "holds": []
+}
