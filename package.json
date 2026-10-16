@@ -1,0 +1,12 @@
+{
+  "name": "observeros-dashboard-control-plane",
+  "private": true,
+  "version": "0.0.0-control-plane",
+  "packageManager": "pnpm@11.25.0",
+  "scripts": {
+    "control-plane:validate": "python automation/scripts/validate_control_plane.py",
+    "automation:preflight": "python automation/scripts/preflight.py --otp-id OTP-V7-001A-LOCAL-AUTOMATION-RUNNER-R1",
+    "automation:guard": "python automation/scripts/guard_changed_paths.py --otp-id OTP-V7-001A-LOCAL-AUTOMATION-RUNNER-R1",
+    "automation:receipt-draft": "python automation/scripts/draft_receipt.py --otp-id OTP-V7-001A-LOCAL-AUTOMATION-RUNNER-R1"
+  }
+}
