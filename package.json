@@ -32,6 +32,7 @@
     "accounting-shell:verify": "node automation/scripts/verify_accounting_shell.mjs",
     "automation-admission-contract:verify": "node automation/scripts/verify_automation_admission_contract.mjs",
     "offline-automation-adapter:verify": "node automation/scripts/verify_offline_automation_adapter.mjs",
+    "preos-regression:verify": "node automation/scripts/run_full_preos_regression.mjs",
     "control-plane:validate": "python automation/scripts/validate_control_plane.py",
     "automation:preflight": "python automation/scripts/preflight.py --otp-id OTP-V7-001A-LOCAL-AUTOMATION-RUNNER-R1",
     "automation:guard": "python automation/scripts/guard_changed_paths.py --otp-id OTP-V7-001A-LOCAL-AUTOMATION-RUNNER-R1",
