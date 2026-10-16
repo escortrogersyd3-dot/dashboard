@@ -39,6 +39,7 @@
     "presentation-states-i18n:verify": "node automation/scripts/verify_presentation_states_i18n.mjs",
     "a11y-responsive:verify": "node automation/scripts/verify_a11y_responsive.mjs",
     "adapter-readiness:verify": "node automation/scripts/verify_adapter_readiness.mjs",
+    "phase2-regression:verify": "node automation/scripts/run_phase2_regression.mjs",
     "control-plane:validate": "python automation/scripts/validate_control_plane.py",
     "automation:preflight": "python automation/scripts/preflight.py --otp-id OTP-V7-001A-LOCAL-AUTOMATION-RUNNER-R1",
     "automation:guard": "python automation/scripts/guard_changed_paths.py --otp-id OTP-V7-001A-LOCAL-AUTOMATION-RUNNER-R1",
