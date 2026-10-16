@@ -41,7 +41,7 @@
     ,{"otp_id":"OTP-V7-061-SHOWCASE-BASELINE-RECONCILIATION-R1","artifact":"automation/otps/OTP-V7-061-SHOWCASE-BASELINE-RECONCILIATION-R1.json","status":"hold","depends_on":["OTP-V7-051-PREOS-SHOWCASE-R1"]}
     ,{"otp_id":"OTP-V7-070-V7-FIDELITY-SHELL-R1","artifact":"automation/otps/OTP-V7-070-V7-FIDELITY-SHELL-R1.json","status":"receipt_verified","depends_on":["OTP-V7-061-SHOWCASE-BASELINE-RECONCILIATION-R2"]}
     ,{"otp_id":"OTP-V7-071-V7-MODULE-HIERARCHY-R1","artifact":"automation/otps/OTP-V7-071-V7-MODULE-HIERARCHY-R1.json","status":"receipt_verified","depends_on":["OTP-V7-070-V7-FIDELITY-SHELL-R1"]}
-    ,{"otp_id":"OTP-V7-072-LOCAL-INTERACTION-SHELL-R1","artifact":"automation/otps/OTP-V7-072-LOCAL-INTERACTION-SHELL-R1.json","status":"backlog","depends_on":["OTP-V7-071-V7-MODULE-HIERARCHY-R1"]}
+    ,{"otp_id":"OTP-V7-072-LOCAL-INTERACTION-SHELL-R1","artifact":"automation/otps/OTP-V7-072-LOCAL-INTERACTION-SHELL-R1.json","status":"admitted","depends_on":["OTP-V7-071-V7-MODULE-HIERARCHY-R1"]}
     ,{"otp_id":"OTP-V7-073-PRESENTATION-STATES-I18N-R1","artifact":"automation/otps/OTP-V7-073-PRESENTATION-STATES-I18N-R1.json","status":"backlog","depends_on":["OTP-V7-071-V7-MODULE-HIERARCHY-R1"]}
     ,{"otp_id":"OTP-V7-074-A11Y-RESPONSIVE-R1","artifact":"automation/otps/OTP-V7-074-A11Y-RESPONSIVE-R1.json","status":"backlog","depends_on":["OTP-V7-072-LOCAL-INTERACTION-SHELL-R1","OTP-V7-073-PRESENTATION-STATES-I18N-R1"]}
     ,{"otp_id":"OTP-V7-075-ADAPTER-READINESS-R1","artifact":"automation/otps/OTP-V7-075-ADAPTER-READINESS-R1.json","status":"backlog","depends_on":["OTP-V7-073-PRESENTATION-STATES-I18N-R1"]}
