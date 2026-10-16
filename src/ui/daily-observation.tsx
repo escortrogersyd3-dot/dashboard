@@ -1,0 +1,3 @@
+import { PresentationState } from "./interface-core";
+const slots = ["Observation slot one", "Observation slot two", "Observation slot three", "Observation slot four", "Observation slot five", "Observation slot six"] as const;
+export function DailyObservation() { return <section className="daily-observation" aria-labelledby="daily-observation-title"><h2 id="daily-observation-title">Observation and exceptions</h2><p>Approved daily-observation authority required. No observation content is connected.</p><div className="observation-slots">{slots.map((label) => <article className="observation-slot" key={label}><h3>{label}</h3><p>Authorized opaque reference required</p></article>)}</div><PresentationState state="EMPTY" /></section>; }
