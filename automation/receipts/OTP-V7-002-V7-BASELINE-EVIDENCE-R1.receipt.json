@@ -1,0 +1,23 @@
+{
+  "otp_id": "OTP-V7-002-V7-BASELINE-EVIDENCE-R1",
+  "otp_sha256": "76019267a26f51a5223f0c72c872a3a01cbc203d59793a0f97b774148e0e4fb0",
+  "git_commit": "df996b9c7388ae393c28abe276747f47e0203019",
+  "status": "pass",
+  "changed_paths": [
+    "automation/scripts/capture_v7_baseline.py",
+    "automation/scripts/verify_v7_baseline.py",
+    "baseline/v7/README.md",
+    "baseline/v7/manifest.json",
+    "baseline/v7/screenshots/desktop-1440x1024.png",
+    "baseline/v7/screenshots/mobile-390x844.png"
+  ],
+  "checks": [
+    "source SHA256 and byte length: PASS",
+    "static DOM/CSS/function inventory: PASS",
+    "desktop 1440x1024 visual fixture: PASS",
+    "mobile 390x844 visual fixture: PASS",
+    "fixture hash recheck: PASS",
+    "GitHub PR control-plane validation: PASS"
+  ],
+  "holds": []
+}
