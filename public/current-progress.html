@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="zh-Hans">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Observer OS Dashboard V7 — DAILY Preview</title>
+    <style>
+      :root { color-scheme: dark; --bg:#182027; --nav:#151c22; --panel:#243039; --surface:#2b3741; --edge:#41515d; --text:#eef3f6; --muted:#a8b7c2; --orange:#e5a05c; --red:#e26670; --green:#79c69b; }
+      * { box-sizing:border-box; } body { margin:0; background:var(--bg); color:var(--text); font:14px/1.5 system-ui,-apple-system,"Segoe UI","Microsoft YaHei",sans-serif; }
+      .layout { display:grid; grid-template-columns:228px minmax(0,1fr); min-height:100vh; }.sidebar { padding:22px 14px; background:var(--nav); border-right:1px solid var(--edge); }.brand { padding:4px 10px 24px; }.brand h1,.mast h2 { margin:0; font-size:23px; }.brand p,.muted { color:var(--muted); font-size:12px; }.label { color:var(--muted); font-size:11px; font-weight:700; letter-spacing:1px; margin:14px 8px 7px; }.nav { display:grid; gap:7px; }.nav span { display:block; padding:12px 13px; border-radius:10px; color:#b9c5ce; }.nav .active { background:#303c47; border:1px solid #536575; color:#fff; }.footnote { margin-top:26px; padding:10px; color:var(--muted); font-size:12px; line-height:1.75; }.main { width:min(100%,1760px); margin:0 auto; padding:24px 30px 52px; }.mast { display:flex; justify-content:space-between; align-items:center; gap:16px; margin-bottom:22px; }.mast p { margin:7px 0 0; color:var(--muted); font-size:13px; }.authority { border:1px solid var(--edge); border-radius:99px; padding:8px 11px; color:var(--muted); font-size:12px; white-space:nowrap; }.section { background:var(--panel); border:1px solid var(--edge); border-radius:16px; padding:18px; margin-bottom:15px; box-shadow:0 8px 22px #0002; }.section h3 { margin:0; font-size:17px; }.subline { margin:4px 0 0; color:var(--muted); font-size:12px; }.summary { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:11px; }.card,.module { min-width:0; border:1px solid #3c4d58; border-radius:12px; padding:14px; background:var(--surface); }.card strong { display:block; margin-bottom:8px; font-size:13px; }.card p,.module p { margin:0; color:var(--muted); font-size:12px; }.task { border-color:#986a38; background:#32281f; }.task h3 { color:#ffd6a6; }.taskbar { display:flex; align-items:center; gap:10px; margin-top:12px; padding:10px 12px; border:1px solid #b07142; border-radius:12px; background:#443021; color:#ffe1b9; }.tag { display:inline-block; border-radius:99px; padding:3px 8px; background:#33414b; color:#e7edf2; font-size:11px; }.tag.orange { background:#594028; color:#ffe0b0; }.stack { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:11px; margin-top:14px; }.module h4 { margin:0 0 8px; font-size:14px; }.state { border-left:3px solid var(--orange); background:#2e353a; border-radius:4px 11px 11px 4px; padding:11px 12px; color:#d7e0e6; }.state strong { color:#ffe0b0; }.mobile-nav { display:none; }.fine { margin:14px 0 0; color:var(--muted); font-size:12px; }
+      @media (max-width:879px) { .layout { display:block; padding-bottom:56px; }.sidebar { display:none; }.main { padding:20px 16px 30px; }.mast { align-items:flex-start; }.authority { font-size:11px; }.summary,.stack { grid-template-columns:repeat(2,minmax(0,1fr)); }.mobile-nav { position:fixed; inset:auto 0 0; z-index:2; display:grid; grid-template-columns:repeat(3,1fr); border-top:1px solid var(--edge); background:var(--nav); }.mobile-nav span { padding:11px 6px; text-align:center; color:var(--muted); font-size:12px; }.mobile-nav .active { color:#fff; background:#303c47; } }
+    </style>
+  </head>
+  <body>
+    <div class="layout">
+      <aside class="sidebar" aria-label="Preview navigation">
+        <div class="brand"><h1>Observer OS</h1><p>Pink House · V7 reconstruction preview<br>低眩光深灰 / 仅合同与界面壳</p></div>
+        <div class="label">导航</div><nav class="nav"><span class="active">01 DAILY · 当前态势</span><span>02 WEEKLY · 待后续合同</span><span>03 INSIGHT · 待后续合同</span></nav>
+        <p class="footnote">PLANNING / RECONSTRUCTION CONTRACT<br>无数据库、无真实接口、无业务计算、无权限决策。</p>
+      </aside>
+      <main class="main" id="daily-preview">
+        <header class="mast"><div><h2>DAILY · 现场态势</h2><p>当前已完成部分的 Mock-only HTML 展示</p></div><span class="authority">Authority: ObserverOS input not connected</span></header>
+        <section class="section"><h3>Current summary</h3><p class="subline">四个冻结槽位；仅在 ObserverOS 返回经审核匿名聚合后才可显示。</p><div class="summary"><article class="card"><strong>Current work</strong><p>Approved DailySurface aggregate required</p></article><article class="card"><strong>Customer payment</strong><p>Approved precomputed aggregate required</p></article><article class="card"><strong>On-time rate</strong><p>ObserverOS result required</p></article><article class="card"><strong>Studio use</strong><p>Authorized aggregate required</p></article></div></section>
+        <section class="section task"><h3>Current tasks</h3><p class="subline">冻结顶端位置；当前没有可呈现的权威待办。</p><div class="taskbar"><span class="tag orange">EMPTY</span><span>Approved ObserverOS task reference required. Dashboard does not create, rank, or infer tasks.</span></div></section>
+        <section class="section"><h3>Dynamic module stack</h3><p class="subline">只有未来经验证的 ObserverOS 来源、原因和顺序可改变模块位置；浏览器不计算优先级。</p><div class="stack"><article class="module"><h4>Observation</h4><p>Approved daily-observation reference required</p></article><article class="module"><h4>Rooms and logistics</h4><p>Approved DailySurface aggregate required</p></article><article class="module"><h4>Website booking and service</h4><p>Approved website-workflow reference required</p></article><article class="module"><h4>Work and current summary</h4><p>Approved DailySurface or trend artifact required</p></article></div></section>
+        <section class="state" aria-label="EMPTY"><strong>EMPTY / Mock-only</strong><br>未连接任何 ObserverOS 浏览器安全读取实现。所有数据、计算、分析、权限、审计与数据库仍由 ObserverOS 独占。</section>
+        <p class="fine">本文件是离线展示，不是接口上线、权限授予、部署或真实业务状态的证据。</p>
+      </main>
+    </div>
+    <nav class="mobile-nav" aria-label="Mobile preview navigation"><span class="active">DAILY</span><span>WEEKLY</span><span>INSIGHT</span></nav>
+  </body>
+</html>
