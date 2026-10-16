@@ -9,12 +9,13 @@ const navigation = [
 ] as const;
 
 export type ShellSection = (typeof navigation)[number]["id"];
-export type PresentationStateKind = "LOADING" | "EMPTY" | "STALE" | "ERROR" | "PERMISSION";
+export type PresentationStateKind = "LOADING" | "EMPTY" | "STALE" | "UNKNOWN" | "ERROR" | "PERMISSION";
 
 const stateCopy: Record<PresentationStateKind, { title: string; detail: string }> = {
   LOADING: { title: "Loading", detail: "Waiting for a permitted Observer OS response." },
   EMPTY: { title: "No data", detail: "No authoritative data is connected in this scaffold." },
   STALE: { title: "Stale data", detail: "A future OS response must disclose its freshness." },
+  UNKNOWN: { title: "Status unknown", detail: "Dashboard cannot infer freshness, access, or business meaning." },
   ERROR: { title: "Unable to load", detail: "A future OS response must provide a safe error reference." },
   PERMISSION: { title: "Permission required", detail: "Dashboard never decides access; it only presents the OS result." },
 };
